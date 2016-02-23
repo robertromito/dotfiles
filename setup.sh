@@ -1,2 +1,2 @@
 #!/bin/bash
-ln -sv "~/.dotfiles/git/.gitconfig" ~
+ln -s ~/.dotfiles/git/.gitconfig ~/.gitconfig
