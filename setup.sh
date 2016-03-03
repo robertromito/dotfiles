@@ -4,4 +4,4 @@ ln -s ~/.dotfiles/bash/.bash_profile ~/.bash_profile
 
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew update
-brew install git bash-completion bash-git-prompt
+brew install git bash-completion bash-git-prompt todo-txt
