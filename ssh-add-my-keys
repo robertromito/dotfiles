@@ -1,0 +1,4 @@
+ssh-add ~/.ssh/github
+ssh-add ~/.ssh/bitbucket
+ssh-add ~/ARC/.ssh/redcross-bitbucket
+ssh-add -l
