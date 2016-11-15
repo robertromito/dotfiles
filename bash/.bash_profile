@@ -9,3 +9,4 @@ fi
 
 export TODOTXT_DEFAULT_ACTION=ls
 alias t="todo.sh -t -d ~/pwiki/.todo.cfg"
+export EDITOR=vi
