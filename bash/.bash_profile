@@ -10,3 +10,5 @@ fi
 export TODOTXT_DEFAULT_ACTION=ls
 alias t="todo.sh -t -d ~/pwiki/.todo.cfg"
 export EDITOR=vi
+export JAVA_HOME=`/usr/libexec/java_home`
+export PLANTUML_JAR=/usr/local/Cellar/plantuml/8048/libexec/plantuml.jar
