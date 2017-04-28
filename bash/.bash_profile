@@ -12,3 +12,5 @@ alias t="todo.sh -t -d ~/pwiki/.todo.cfg"
 export EDITOR=vi
 export JAVA_HOME=`/usr/libexec/java_home`
 export PLANTUML_JAR=/usr/local/Cellar/plantuml/8048/libexec/plantuml.jar
+export GOPATH=$HOME/src/gocode
+export PATH=$PATH:$GOPATH/bin
