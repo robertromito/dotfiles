@@ -12,4 +12,4 @@ chmod 700 ~/.dotfiles/ssh-add-my-keys
 
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew update
-brew install git bash-completion bash-git-prompt todo-txt tree ag
+brew install git bash-completion bash-git-prompt todo-txt tree wget
