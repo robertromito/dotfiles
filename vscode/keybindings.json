@@ -1,0 +1,11 @@
+[
+    {
+        "key": "ctrl+9",
+        "command": "workbench.action.terminal.focus"
+    },
+    {
+        "key": "ctrl+tab",
+        "command": "workbench.action.terminal.focusNext",
+        "when": "terminalFocus"
+    }
+]
