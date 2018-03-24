@@ -1,4 +1,5 @@
 #!/bin/bash
+# Setup for macOS
 dotdir=~/.dotfiles
 ln_cmd='ln -sfn'
 
