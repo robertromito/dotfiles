@@ -7,6 +7,7 @@ $ln_cmd $dotdir/git/.gitconfig ~/.gitconfig
 $ln_cmd $dotdir/bash/.bash_profile ~/.bash_profile
 $ln_cmd $dotdir/bash/.bash_profile ~/.bashrc
 $ln_cmd $dotdir/vim/.vimrc ~/.vimrc
+$ln_cmd ~/Dropbox/pwiki ~/pwiki
 
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew update
