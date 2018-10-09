@@ -1,7 +1,7 @@
 export DOCKER_HOST=tcp://localhost:2375
 
-. dotfiles/git/git-completion.bash
-. dotfiles/git/git-prompt.sh
+. ~/dotfiles/git/git-completion.bash
+. ~/dotfiles/git/git-prompt.sh
 
 export GIT_PS1_SHOWDIRTYSTATE=1
 export GIT_PS1_SHOWSTASHSTATE=1
