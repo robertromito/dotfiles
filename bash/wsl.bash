@@ -1,4 +1,5 @@
 export DOCKER_HOST=tcp://localhost:2375
+export EDITOR=vi
 
 . ~/dotfiles/git/git-completion.bash
 . ~/dotfiles/git/git-prompt.sh
