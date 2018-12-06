@@ -5,6 +5,7 @@ $config_files = @{
     "vscode\settings.json" = "$vscode_user_settings_path\settings.json"
     "vscode\keybindings.json" = "$vscode_user_settings_path\keybindings.json"
     "git\.gitconfig" = "$git_settings_path\.gitconfig"
+    "git\.gitconfig-windows" = "$git_settings_path\.gitconfig-windows"
 }
 
 Write-Output "Setting up symlinks to config files"
