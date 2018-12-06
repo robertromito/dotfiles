@@ -23,6 +23,9 @@
 [includeIf "gitdir/i:d:/"]
   path = .gitconfig-windows
 
+[includeIf "gitdir/i:/users/rob/src/"]
+  path = .gitconfig-macos
+
 [color]
     branch = auto
     diff = auto
