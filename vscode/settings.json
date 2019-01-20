@@ -7,5 +7,6 @@
         "suppressShowKeyBindingsNotice": true
     },
     "explorer.confirmDragAndDrop": false,
-    "python.jediEnabled": false
+    "python.jediEnabled": false,
+    "extensions.ignoreRecommendations": false
 }
