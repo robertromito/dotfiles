@@ -8,5 +8,7 @@ ln_cmd='ln -sfn'
 $ln_cmd $dotdir/git/.gitconfig ~/.gitconfig
 $ln_cmd $dotdir/git/.gitconfig-wsl ~/.gitconfig-wsl
 $ln_cmd $dotdir/vim/.vimrc ~/.vimrc
+$ln_cmd $dotdir/tmux.conf ~/.tmux.conf
+
 
 sudo $ln_cmd $dotdir/wsl/wsl.conf /etc/wsl.conf
