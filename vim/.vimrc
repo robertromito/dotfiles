@@ -18,6 +18,12 @@
 set nocompatible
 set encoding=utf-8
 
+" tabs and spaces and stuff
+set tabstop=4 softtabstop=4 expandtab
+
+" status line
+set laststatus=2
+
 " Make backspace behave in a sane manner.
 set backspace=indent,eol,start
 
