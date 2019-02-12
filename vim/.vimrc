@@ -31,3 +31,9 @@ set number
 
 " Allow hidden buffers, don't limit to 1 file per window/split
 set hidden
+
+"split navigations
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
