@@ -49,3 +49,4 @@ au FileType python setlocal
     \ autoindent
     \ fileformat=unix
 
+colo darkblue
