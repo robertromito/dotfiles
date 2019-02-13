@@ -11,5 +11,3 @@ export GIT_PS1_SHOWUPSTREAM=verbose
 export GIT_PS1_SHOWCOLORHINTS=1
 
 export PS1='\w$(__git_ps1 " (%s)")\$ '
-
-eval $(ssh-agent)
