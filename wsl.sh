@@ -21,4 +21,4 @@ vim_colors=~/.vim/colors
 $ln_cmd $dotdir/vim/.vimrc ~/.vimrc
 mkdir -p $vim_plugins $vim_colors
 rm -rf $vim_plugins/ale ; git clone https://github.com/w0rp/ale.git $vim_plugins/ale
-rm -rf $vim_plugins/jedi-vim git clone --recursive https://github.com/davidhalter/jedi-vim.git $vim_plugins/jedi-vim
+rm -rf $vim_plugins/jedi-vim ; git clone --recursive https://github.com/davidhalter/jedi-vim.git $vim_plugins/jedi-vim
