@@ -55,4 +55,8 @@ au FileType python setlocal
     \ autoindent
     \ fileformat=unix
 
-colo elflord
+" Pick my colors
+colo ron
+
+" Some key mappings
+map <Leader>t :NERDTreeToggle<cr>
