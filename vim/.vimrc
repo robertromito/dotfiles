@@ -60,3 +60,8 @@ colo ron
 
 " Some key mappings
 map <Leader>t :NERDTreeToggle<cr>
+
+" Built in fuzzy finding
+" From https://www.youtube.com/watch?v=XA2WjJbmmoM. Thanks Max Cantor!
+set path+=**
+set wildmenu
