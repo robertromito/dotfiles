@@ -23,3 +23,10 @@ mkdir -p $vim_plugins $vim_colors
 rm -rf $vim_plugins/ale ; git clone https://github.com/w0rp/ale.git $vim_plugins/ale
 rm -rf $vim_plugins/jedi-vim ; git clone --recursive https://github.com/davidhalter/jedi-vim.git $vim_plugins/jedi-vim
 rm -rf $vim_plugins/nerdtree ; git clone --recursive https://github.com/scrooloose/nerdtree.git $vim_plugins/nerdtree
+
+# my website stuff
+hugo_version=0.54.0
+hugo_file=hugo_${hugo_version}_Linux-64bit.tar.gz
+wget https://github.com/gohugoio/hugo/releases/download/v${hugo_version}/${hugo_file}
+sudo tar -xzvf ${hugo_file} -C /usr/local/bin hugo
+rm ${hugo_file}
