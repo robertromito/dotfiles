@@ -2,11 +2,12 @@
 # Setup file for Windows Subsystem for Linux
 dotdir=$(pwd)
 
+# This needs to be a cp instead of a link because I change the root mount in /etc/wsl.conf
+sudo cp $dotdir/wsl/wsl.conf /etc/wsl.conf
+
 grep -q ". $HOME/dotfiles/bash/wsl.bash" ~/.bashrc || echo ". $HOME/dotfiles/bash/wsl.bash" >> ~/.bashrc
 
 ln_cmd='ln -sfn'
-
-sudo $ln_cmd $dotdir/wsl/wsl.conf /etc/wsl.conf
 
 # git stuff
 $ln_cmd $dotdir/git/.gitconfig ~/.gitconfig

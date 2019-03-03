@@ -13,6 +13,8 @@ export GIT_PS1_SHOWSTASHSTATE=1
 export GIT_PS1_SHOWUNTRACKEDFILES=1
 export GIT_PS1_SHOWUPSTREAM=verbose
 export GIT_PS1_SHOWCOLORHINTS=1
-export PS1='\w$(__git_ps1 " (%s)")\$ '
+
+export PS1='\w$(__git_ps1 " (%s)")
+[\!] \$ '
 
 alias ssha='eval $(ssh-agent); ~/dotfiles/ssh-init'
