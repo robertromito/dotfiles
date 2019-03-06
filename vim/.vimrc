@@ -67,3 +67,5 @@ map <Leader>t :NERDTreeToggle<cr>
 " From https://www.youtube.com/watch?v=XA2WjJbmmoM. Thanks Max Cantor!
 set path+=**
 set wildmenu
+
+let g:table_mode_corner='|'

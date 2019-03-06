@@ -24,6 +24,7 @@ mkdir -p $vim_plugins $vim_colors
 rm -rf $vim_plugins/ale ; git clone https://github.com/w0rp/ale.git $vim_plugins/ale
 rm -rf $vim_plugins/jedi-vim ; git clone --recursive https://github.com/davidhalter/jedi-vim.git $vim_plugins/jedi-vim
 rm -rf $vim_plugins/nerdtree ; git clone --recursive https://github.com/scrooloose/nerdtree.git $vim_plugins/nerdtree
+rm -rf $vim_plugins/vim-table-mode ; git clone --recursive https://github.com/dhruvasagar/vim-table-mode.git $vim_plugins/vim-table-mode
 
 # my website stuff
 hugo_version=0.54.0
