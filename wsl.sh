@@ -28,7 +28,7 @@ rm -rf $vim_plugins/vim-table-mode ; git clone --recursive https://github.com/dh
 
 # my website stuff
 hugo_version=0.54.0
-hugo_file=hugo_${hugo_version}_Linux-64bit.tar.gz
+hugo_file=hugo_extended_${hugo_version}_Linux-64bit.tar.gz
 wget https://github.com/gohugoio/hugo/releases/download/v${hugo_version}/${hugo_file}
 sudo tar -xzvf ${hugo_file} -C /usr/local/bin hugo
 rm ${hugo_file}
