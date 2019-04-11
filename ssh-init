@@ -1,3 +1,4 @@
 ssh-add ~/.ssh/github
 ssh-add ~/.ssh/bitbucket
+ssh-add ~/.ssh/gitlab
 ssh-add -l
