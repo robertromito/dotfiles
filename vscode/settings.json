@@ -8,5 +8,6 @@
     },
     "explorer.confirmDragAndDrop": false,
     "python.jediEnabled": false,
-    "extensions.ignoreRecommendations": false
+    "extensions.ignoreRecommendations": false,
+    "liveServer.settings.donotShowInfoMsg": true
 }
