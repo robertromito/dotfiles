@@ -1,5 +1,5 @@
 {
-    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\wsl.exe",
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.editor.enablePreview": false,
     "window.zoomLevel": 0,
@@ -9,5 +9,6 @@
     "explorer.confirmDragAndDrop": false,
     "python.jediEnabled": false,
     "extensions.ignoreRecommendations": false,
-    "liveServer.settings.donotShowInfoMsg": true
+    "liveServer.settings.donotShowInfoMsg": true,
+    "gitlens.keymap": "alternate"
 }
