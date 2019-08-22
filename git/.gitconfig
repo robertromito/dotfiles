@@ -44,4 +44,4 @@
     changed = green
     untracked = cyan
 [winUpdater]
-	recentlySeenVersion = 2.21.0.windows.1
+	recentlySeenVersion = 2.23.0.windows.1
