@@ -18,3 +18,6 @@ export PS1='\w$(__git_ps1 " (%s)")
 [\!] \$ '
 
 alias ssha='eval $(ssh-agent); ~/dotfiles/ssh-init'
+
+export TODOTXT_DEFAULT_ACTION=ls
+alias t='~/pwiki/todotxtcli/todo.sh -d ~/pwiki/.todo.cfg'
