@@ -1,6 +1,7 @@
 {
     "editor.formatOnSave": true,
     "editor.suggestSelection": "first",
+    "editor.fontFamily": "'Delugia Nerd Font', Consolas, 'Courier New', monospace",
     "emmet.includeLanguages": {
         "aspnetcorerazor": "html",
         "razor": "html"
@@ -11,7 +12,7 @@
         "**/.settings": false,
         "**/.factorypath": false
     },
-    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "terminal.integrated.shell.windows": "pwsh.exe",
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.editor.enablePreview": false,
     "window.zoomLevel": 0,
@@ -36,5 +37,6 @@
         "file:///c%3A/Users/rob/.vscode/extensions/atlassian.atlascode-1.4.3/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
     },
     "terminal.integrated.rendererType": "dom",
-    "java.errors.incompleteClasspath.severity": "ignore"
+    "java.errors.incompleteClasspath.severity": "ignore",
+    "workbench.sideBar.location": "right"
 }

@@ -2,10 +2,12 @@ $vscode_user_settings_path = "$env:APPDATA\Code\User"
 $git_settings_path = $env:HOME
 
 $config_files = @{
+    "powershell\profile.ps1" = "$env:HOME\Documents\PowerShell\Microsoft.PowerShell_profile.ps1"
     "vscode\settings.json" = "$vscode_user_settings_path\settings.json"
     "vscode\keybindings.json" = "$vscode_user_settings_path\keybindings.json"
     "git\.gitconfig" = "$git_settings_path\.gitconfig"
     "git\.gitconfig-windows" = "$git_settings_path\.gitconfig-windows"
+    "winterm\profiles.json" = "$env:HOME\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\profiles.json"
 }
 
 Write-Output "Setting up symlinks to config files"
