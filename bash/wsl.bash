@@ -21,3 +21,19 @@ alias ssha='eval $(ssh-agent); ~/dotfiles/ssh-init'
 
 export TODOTXT_DEFAULT_ACTION=ls
 alias t='~/pwiki/todotxtcli/todo.sh -d ~/pwiki/.todo.cfg'
+
+# Auto start/detect ssh agent. 
+# Thanks MS! https://code.visualstudio.com/docs/remote/troubleshooting#_wsl-tips
+echo "Setting up ssh-agent"
+if [ -z "$SSH_AUTH_SOCK" ]
+then
+   echo "SSH_AUTH_SOCK not setup. Checking for running agents."
+   # Check for a currently running instance of the agent
+   RUNNING_AGENT="`ps -ax | grep 'ssh-agent -s' | grep -v grep | wc -l | tr -d '[:space:]'`"
+   if [ "$RUNNING_AGENT" = "0" ]
+   then
+        echo "No agents running. Launching a new one."
+        ssh-agent -s &> ~/.ssh/ssh-agent
+   fi
+   eval `cat ~/.ssh/ssh-agent`
+fi
