@@ -33,7 +33,7 @@
         "baseUrlSuffix": "atlassian.net"
     },
     "yaml.schemas": {
-        "file:///c%3A/Users/rob/.vscode/extensions/atlassian.atlascode-2.4.2/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+        "file:///c%3A/Users/rob/.vscode/extensions/atlassian.atlascode-2.4.11/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
     },
     "terminal.integrated.rendererType": "dom",
     "java.errors.incompleteClasspath.severity": "ignore",
