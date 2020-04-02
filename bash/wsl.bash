@@ -3,7 +3,8 @@ export EDITOR=vi
 set -o vi
 
 # So I can use docker running on the Windows side
-export DOCKER_HOST=tcp://localhost:2375
+# No longer needed with WSL2 ???
+# export DOCKER_HOST=tcp://localhost:2375
 
 # Git prompt stuff
 . ~/dotfiles/git/git-completion.bash
