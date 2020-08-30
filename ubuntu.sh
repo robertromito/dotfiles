@@ -8,3 +8,7 @@ ln_cmd='ln -sfn'
 
 # git stuff
 $ln_cmd $dotdir/git/.gitconfig ~/.gitconfig
+
+sudo apt-get -y install powerline powerline-gitstatus
+mkdir -p ~/.config/powerline
+cp -r /usr/share/powerline/config_files/* ~/.config/powerline/
