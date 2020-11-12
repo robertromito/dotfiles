@@ -6,3 +6,4 @@ if [ -f /usr/share/powerline/bindings/bash/powerline.sh ]; then
 fi
 
 alias c="code-insiders"
+alias r="~/.local/bin/radian"
