@@ -16,3 +16,5 @@ $ln_cmd $dotdir/terminator/config ~/.config/terminator/config
 sudo apt-get -y install powerline powerline-gitstatus
 mkdir -p ~/.config/powerline
 cp -r /usr/share/powerline/config_files/* ~/.config/powerline/
+
+$ln_cmd $dotdir/tmux.conf ~/.tmux.conf
