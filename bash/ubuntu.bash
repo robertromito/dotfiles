@@ -5,5 +5,5 @@ if [ -f /usr/share/powerline/bindings/bash/powerline.sh ]; then
   source /usr/share/powerline/bindings/bash/powerline.sh
 fi
 
-alias c="code-insiders"
+alias c="/usr/share/code/code"
 alias r="~/.local/bin/radian"
