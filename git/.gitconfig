@@ -13,7 +13,7 @@
   ci = commit
   s = status -s
   br = branch
-  lg = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+  lg = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short --no-merges
   type = cat-file -t
   dump = cat-file -p
 
