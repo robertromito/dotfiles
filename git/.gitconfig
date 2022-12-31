@@ -47,3 +47,5 @@
 	recentlySeenVersion = 2.25.0.windows.1
 [pull]
 	ff = only
+[inint]
+	defaultBranch = main
