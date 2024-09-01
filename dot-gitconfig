@@ -1,0 +1,36 @@
+[user]
+  name = Rob Romito
+  email = rob@robertromito.com
+
+[push]
+  default = simple
+
+[alias]
+  co = checkout
+  ci = commit
+  s = status -s
+  br = branch
+  lg = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short --no-merges
+  type = cat-file -t
+  dump = cat-file -p
+
+[color]
+    branch = auto
+    diff = auto
+    status = auto
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
+
+[pull]
+	ff = only
