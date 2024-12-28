@@ -1,0 +1,21 @@
+set nocompatible
+
+colorscheme zaibatsu
+
+syntax on
+filetype on
+filetype plugin on
+filetype indent on
+set backspace=indent,eol,start "Make bksp key work as expected
+set linebreak
+set termguicolors
+set expandtab
+set tabstop=2
+set shiftwidth=2
+set cursorline
+set number
+
+set mouse=c "Disabe mouse interaction as my terminal/tmux will handle it
+
+hi link markdownError Normal "No markdown error highlighting
+
