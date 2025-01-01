@@ -119,4 +119,12 @@ export PYENV_ROOT="$HOME/.pyenv"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
+# uv - the python project/package tool - added this. 
+# Although it's pretty general purpose and can help with
+# kinds of things
 . "$HOME/.local/bin/env"
+
+# Ruby gems setup
+export GEM_HOME="$HOME/.local/gems"
+export PATH="$GEM_HOME/bin:$PATH"
+
