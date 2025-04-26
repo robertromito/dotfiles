@@ -128,3 +128,6 @@ eval "$(pyenv virtualenv-init -)"
 export GEM_HOME="$HOME/.local/gems"
 export PATH="$GEM_HOME/bin:$PATH"
 
+# Go setup
+export PATH=$PATH:/usr/local/go/bin
+
