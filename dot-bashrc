@@ -124,10 +124,6 @@ eval "$(pyenv virtualenv-init -)"
 # kinds of things
 . "$HOME/.local/bin/env"
 
-# Ruby gems setup
-export GEM_HOME="$HOME/.local/gems"
-export PATH="$GEM_HOME/bin:$PATH"
-
 # Go setup
 export PATH=$PATH:/usr/local/go/bin
 

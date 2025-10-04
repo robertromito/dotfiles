@@ -1,5 +1,17 @@
 ;; Rob's emacs config
 
+;; No menu bar
+(menu-bar-mode -1)
+
+;; Break lines at 80 chars by default
+(setq-default column-number-mode t)
+(setq-default fill-column 80)
+(setq-default auto-fill-mode t)
+
+;; Org mode setup
+(add-to-list 'auto-mode-alist '("\\.md\\'" . org-mode))
+(add-hook 'org-mode-hook 'auto-fill-mode)
+
 ;; Default font
 (add-to-list 'default-frame-alist
 	     '(font . "Fira Code"))

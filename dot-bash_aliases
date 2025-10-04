@@ -1,0 +1,5 @@
+export EDITOR='emacs -nw --no-site-file --no-splash'
+alias e=$EDITOR
+alias es='emacs --daemon'
+alias em='emacs -c &'
+alias et='emacs -c -nw'
