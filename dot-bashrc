@@ -127,6 +127,9 @@ eval "$(pyenv virtualenv-init -)"
 # Go setup
 export PATH=$PATH:/usr/local/go/bin
 
+# Node setup
+export PATH=$PATH:/opt/nodejs/current/bin
+
 # Always have this as the last line. I do need to figure out exactly why
 # though. Starship seems to behave more when it's loaded right at the end.
 # My guess is statements after the fact might clobber starship settings.
