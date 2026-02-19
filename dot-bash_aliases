@@ -1,5 +1,1 @@
-export EDITOR='emacs -nw --no-site-file --no-splash'
-alias e=$EDITOR
-alias es='emacs --daemon'
-alias em='emacsclient -c &'
-alias et='emacsclient -c -nw'
+export EDITOR=vim
