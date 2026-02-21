@@ -119,16 +119,14 @@ export PYENV_ROOT="$HOME/.pyenv"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
-# uv - the python project/package tool - added this. 
-# Although it's pretty general purpose and can help with
-# kinds of things
-. "$HOME/.local/bin/env"
-
 # Go setup
 export PATH=$PATH:/usr/local/go/bin
 
 # Node setup
 export PATH=$PATH:/opt/nodejs/current/bin
+
+# I want this 2nd last because I want .local/bin to be able to override
+export PATH="~/.local/bin:$PATH"
 
 # Always have this as the last line. I do need to figure out exactly why
 # though. Starship seems to behave more when it's loaded right at the end.
