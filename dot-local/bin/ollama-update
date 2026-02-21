@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -eu
+
+echo "Existing Ollama service and override"
+systemctl status ollama
+
+echo "Installing latest version of Ollama"
+curl -fsSL https://ollama.com/install.sh | sh
+
+echo "Double check service and override"
+systemctl status ollama
