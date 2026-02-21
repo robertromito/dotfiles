@@ -13,6 +13,7 @@ Project that has my configuration files for my linux user setup.
 
 ## Rules
 
+- Don't show me your thoughts.
 - Never use or suggest Vim plugins. Use native Vim configuration options.
 - Never use or suggest tmux plugins. Use native tmux configuration options.
 - Never add secrets to configuration files.
