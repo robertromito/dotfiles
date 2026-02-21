@@ -20,3 +20,5 @@ set mouse=c "Disabe mouse interaction as my terminal/tmux will handle it
 
 hi link markdownError Normal "No markdown error highlighting
 
+set fixeol
+autocmd BufWritePre * :%s/\s\+$//e
