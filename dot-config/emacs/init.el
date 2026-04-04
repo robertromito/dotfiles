@@ -32,4 +32,8 @@
 (unless package-archive-contents
   (package-refresh-contents))
 
+;; -------------------------
+;; Themes
+;; -------------------------
 
+(load-theme 'nord)
