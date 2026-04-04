@@ -36,7 +36,8 @@
 ;; Themes
 ;; -------------------------
 
-(load-theme 'nord)
+(load-theme 'nord t)
+(set-face-background 'default "#000000")
 
 ;; Enable window movement with Alt + arrow keys
 (windmove-default-keybindings 'meta)
