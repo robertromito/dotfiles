@@ -35,9 +35,11 @@
 ;; -------------------------
 ;; Themes
 ;; -------------------------
-
-(load-theme 'nord t)
-(set-face-background 'default "#000000")
+(use-package nord-theme
+  :ensure t
+  :config
+  (load-theme 'nord t)
+  (set-face-background 'default "#000000"))
 
 ;; Enable window movement with Alt + arrow keys
 (windmove-default-keybindings 'meta)
@@ -51,3 +53,12 @@
 (setq window-resize-pixelwise t)
 (setq frame-resize-pixelwise t)
 
+;; vterm package
+(use-package vterm
+  :ensure t)
+
+(use-package markdown-mode
+  :ensure t)
+
+(use-package markdown-mermaid
+  :ensure t)
