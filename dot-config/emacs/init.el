@@ -37,3 +37,7 @@
 ;; -------------------------
 
 (load-theme 'nord)
+
+;; Enable window movement with Alt + arrow keys
+(windmove-default-keybindings 'meta)
+
