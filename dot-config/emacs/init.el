@@ -1,16 +1,35 @@
 ;; init.el for Emacs 30.2
-;; Save custom-set variables in a separate file
+
+;; -------------------------
+;; Custom-file
+;; -------------------------
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
 (load custom-file 'noerror)
 
-;; Set autosave directory
+;; -------------------------
+;; Autosave directory
+;; -------------------------
 (setq auto-save-file-name-transforms
       `((".*" ,(expand-file-name "autosave/" user-emacs-directory) t)))
 
 ;; Ensure autosave directory exists
 (make-directory (expand-file-name "autosave/" user-emacs-directory) t)
 
-;; Disable the button bar
+;; -------------------------
+;; Disable tool bar
+;; -------------------------
 (when (fboundp 'tool-bar-mode)
   (tool-bar-mode -1))
+
+;; -------------------------
+;; Package management
+;; -------------------------
+(require 'package)
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+(unless package--initialized
+  (package-initialize))
+
+(unless package-archive-contents
+  (package-refresh-contents))
+
 
