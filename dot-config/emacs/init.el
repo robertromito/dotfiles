@@ -41,3 +41,12 @@
 ;; Enable window movement with Alt + arrow keys
 (windmove-default-keybindings 'meta)
 
+;; Enable mouse window resizing (vertical and horizontal)
+(when (fboundp 'window-divider-mode)
+  (window-divider-mode 1)
+  (setq window-divider-default-right-width 4)
+  (setq window-divider-default-bottom-width 4))
+
+(setq window-resize-pixelwise t)
+(setq frame-resize-pixelwise t)
+
