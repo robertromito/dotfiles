@@ -8,7 +8,7 @@
  '(custom-safe-themes
    '("5a4cdc4365122d1a17a7ad93b6e3370ffe95db87ed17a38a94713f6ffe0d8ceb"
      default))
- '(package-selected-packages '(nord-theme vterm))
+ '(package-selected-packages '(markdown-mermaid markdown-mode nord-theme vterm))
  '(tool-bar-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
