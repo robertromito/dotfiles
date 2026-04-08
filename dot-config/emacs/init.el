@@ -55,10 +55,14 @@
 
 ;; vterm package
 (use-package vterm
-  :ensure t)
+  :ensure t
+  :config
+  (define-key vterm-mode-map (kbd "C-S-v") #'vterm-yank))
 
 (use-package markdown-mode
   :ensure t)
 
 (use-package markdown-mermaid
   :ensure t)
+
+;; Tmux zooming
