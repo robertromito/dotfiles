@@ -66,3 +66,19 @@
   :ensure t)
 
 ;; Tmux zooming
+
+(defvar my/window-zoom--last-config nil
+  "Stores the window configuration before zooming.")
+
+(defun my/window-zoom-toggle ()
+  "Toggle zoom of the current window like tmux pane zoom."
+  (interactive)
+  (if (and my/window-zoom--last-config (window-configuration-p my/window-zoom--last-config))
+      (progn
+        (let ((config my/window-zoom--last-config))
+          (setq my/window-zoom--last-config nil)
+          (set-window-configuration config)))
+    (setq my/window-zoom--last-config (current-window-configuration))
+    (delete-other-windows)))
+
+(global-set-key (kbd "C-c z") #'my/window-zoom-toggle)
