@@ -68,6 +68,16 @@
 (use-package markdown-mermaid
   :ensure t)
 
+;; FiraCode ligature support (concise)
+(use-package ligature
+  :ensure t
+  :config
+  (ligature-set-ligatures 't '("www" "==" "===" "!=" "!=="
+                               "->" "=>" "<-" "<=" ">=" "&&" "||"
+                               "++" "--" "**" "/*" "*/" "//" ";;"
+                               "<<" ">>" "<<<" ">>>"))
+  (global-ligature-mode t))
+
 ;; Tmux zooming
 
 (defvar my/window-zoom--last-config nil
