@@ -41,6 +41,9 @@
   (load-theme 'nord t)
   (set-face-background 'default "#000000"))
 
+;; Set default font to FiraCode Nerd Font
+(set-face-attribute 'default nil :family "FiraCode Nerd Font" :height 120)
+
 ;; Enable window movement with Alt + arrow keys
 (windmove-default-keybindings 'meta)
 
