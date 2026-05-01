@@ -1,5 +1,16 @@
 ;; init.el for Emacs 30.2
 
+;; Open only *scratch* buffer, no startup screen
+(setq inhibit-startup-screen t)
+(setq inhibit-startup-message t)
+(setq initial-buffer-choice t)
+
+;; Other global settings
+(column-number-mode 1)
+(fido-vertical-mode 1)
+(setq require-final-newline t)
+(add-hook 'before-save-hook #'delete-trailing-whitespace)
+
 ;; -------------------------
 ;; Custom-file
 ;; -------------------------
@@ -59,7 +70,9 @@
 ;; vterm package
 (use-package vterm
   :ensure t
+  :hook (vterm-mode . goto-address-mode)
   :config
+  (define-key vterm-mode-map [remap undo] #'verterm-send-C-z)
   (define-key vterm-mode-map (kbd "C-S-v") #'vterm-yank))
 
 (use-package markdown-mode
@@ -77,6 +90,12 @@
                                "++" "--" "**" "/*" "*/" "//" ";;"
                                "<<" ">>" "<<<" ">>>"))
   (global-ligature-mode t))
+
+(use-package yaml-mode
+  :ensure t
+  :mode "\\.ya?ml\\'"
+  :config
+  (setq yaml-indent-offset 2))
 
 ;; Tmux zooming
 
