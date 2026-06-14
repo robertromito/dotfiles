@@ -6,4 +6,5 @@ k2_host="k-2so.home:~/"
 
 scp ~/.tmux.conf "${k2_host}"
 scp ~/.vimrc "${k2_host}"
+scp -r ~/.vim  "${k2_host}"
 scp ~/.gitconfig "${k2_host}"
