@@ -1,0 +1,71 @@
+#!/bin/bash
+
+# --- Configuration & Validation ---
+
+# Check if the required environment variable is set
+if [ -z "$MODEL_HOST_ENDPOINT" ]; then
+    echo "Error: MODEL_HOST_ENDPOINT environment variable is not set." >&2
+    echo "Example: export MODEL_HOST_ENDPOINT='http://localhost:8080'" >&2
+    exit 1
+fi
+
+# Check if jq is installed
+if ! command -v jq &> /dev/null; then
+    echo "Error: 'jq' is not installed. Please install it to format JSON output." >&2
+    exit 1
+fi
+
+# Check if curl is installed
+if ! command -v curl &> /dev/null; then
+    echo "Error: 'curl' is not installed." >&2
+    exit 1
+fi
+
+# --- Input Processing ---
+
+# Read the entire stdin into a variable
+# This allows you to pipe text or files into the script
+USER_INPUT=$(cat)
+
+# If stdin was empty, exit early
+if [ -z "$USER_INPUT" ]; then
+    echo "Error: No input received via stdin." >&2
+    exit 1
+fi
+
+# --- Payload Construction ---
+
+# We use 'jq' to construct the JSON payload.
+# This is crucial because it automatically handles escaping special
+# characters (like quotes and newlines) in the user input,
+# preventing broken JSON syntax.
+#
+# Note: llama.cpp's OpenAI-compatible endpoint requires a 'model' field,
+# even if the server ignores the specific name.
+JSON_PAYLOAD=$(jq -n \
+    --arg msg "$USER_INPUT" \
+    '{
+        model: "local",
+        messages: [{role: "user", content: $msg}],
+        temperature: 0.7
+    }')
+
+# --- API Request ---
+
+# Construct the full URL
+# We append /v1/chat/completions to the host endpoint
+ENDPOINT="${MODEL_HOST_ENDPOINT%/}/v1/chat/completions"
+
+# Execute the POST request
+# -s: Silent mode (hides progress bar)
+# -X POST: Specifies the HTTP method
+# -H: Sets the Content-Type header
+# -d: Passes the JSON payload
+RESPONSE=$(curl -s -X POST "$ENDPOINT" \
+    -H "Content-Type: application/json" \
+    -d "$JSON_PAYLOAD")
+
+# --- Output ---
+
+# Use jq to pretty-print the raw JSON response for readability
+echo "$RESPONSE" | jq .

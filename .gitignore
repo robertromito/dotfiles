@@ -1,3 +1,4 @@
 *.swp
 dot-config/emacs/**
 !dot-config/emacs/*.el
+*~
