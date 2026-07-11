@@ -6,6 +6,7 @@
 (setq initial-buffer-choice t)
 
 ;; Other global settings
+(global-visual-line-mode 1)
 (column-number-mode 1)
 (fido-vertical-mode 1)
 (setq require-final-newline t)
@@ -25,6 +26,18 @@
 
 ;; Ensure autosave directory exists
 (make-directory (expand-file-name "autosave/" user-emacs-directory) t)
+
+;; -------------------------
+;; Backups (*~)  directory
+;; -------------------------
+;; Create the backup directory if it doesn't exist
+(let ((backup-dir "~/.config/emacs/backups/"))
+  (unless (file-directory-p backup-dir)
+    (make-directory backup-dir t))
+
+  ;; Set the backup directory alist
+  ;; The 'nil' tells Emacs to catch ALL files
+  (setq backup-directory-alist '(nil . "~/.config/emacs/backups/")))
 
 ;; -------------------------
 ;; Disable tool bar
