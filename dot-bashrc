@@ -121,12 +121,10 @@ eval "$(pyenv virtualenv-init -)"
 
 # Go setup
 export PATH=$PATH:/usr/local/go/bin
+export PATH="$PATH:$(go env GOPATH)/bin"
 
 # Node setup
 export PATH=$PATH:/opt/nodejs/current/bin
-
-# opencode
-export PATH=/home/rob/.opencode/bin:$PATH
 
 # I want this 2nd last because I want .local/bin to be able to override
 export PATH="~/.local/bin:$PATH"
