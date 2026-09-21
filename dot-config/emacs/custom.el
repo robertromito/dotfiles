@@ -9,7 +9,8 @@
    '("5a4cdc4365122d1a17a7ad93b6e3370ffe95db87ed17a38a94713f6ffe0d8ceb"
      default))
  '(font-use-system-font t)
- '(package-selected-packages nil)
+ '(package-selected-packages
+   '(go-mode ligature markdown-mermaid nord-theme vterm yaml-mode))
  '(tool-bar-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

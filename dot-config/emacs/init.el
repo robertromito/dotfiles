@@ -1,4 +1,4 @@
-;; init.el for Emacs 30.2
+;; init.el for Emacs 30.2  -*- lexical-binding: t; -*-
 
 ;; Open only *scratch* buffer, no startup screen
 (setq inhibit-startup-screen t)
@@ -92,6 +92,9 @@
   :ensure t)
 
 (use-package markdown-mermaid
+  :ensure t)
+
+(use-package go-mode
   :ensure t)
 
 ;; FiraCode ligature support (concise)
