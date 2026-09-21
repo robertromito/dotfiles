@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+rg_args="-nH --no-heading"
+
+if [[ "$1" == "--done" ]]; then
+  # Show completed tasks too
+  rg $rg_args "TODO: "
+else
+  # Only show active tasks
+  rg $rg_args "TODO: " | rg -v ":DONE"
+fi
